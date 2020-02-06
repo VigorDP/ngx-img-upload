@@ -1,1 +1,1 @@
-export * from './img-upload.module'
+export * from './img-upload/img-upload.module'
