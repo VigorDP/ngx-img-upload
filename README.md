@@ -5,17 +5,12 @@ Ant Design of Angular 中 nz-upload 组件的升级版，初衷是减少该组�
 ### 基本使用
 
 ```
-npm i ngx-img-upload
+npm i ngx-img-upload -S
 
 // 注册组件
-import { ImgUploadComponent } from 'ngx-img-upload';
+import { NgxImgUploadModule } from 'ngx-img-upload';
 @NgModule({
-  declarations: [
-    ImgUploadComponent
-  ],
-  exports: [
-    ImgUploadComponent
-  ],
+  imports:[NgxImgUploadModule]
 })
 // 使用组件
 <app-img-upload (getImgUrl)="getImgUrl($event)" [inputUrls]="[selectedRow.idFrontUrl]"></app-img-upload>
